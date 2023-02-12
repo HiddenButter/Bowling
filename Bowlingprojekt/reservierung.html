@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sigma Club</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/de1dfde38e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-lg-3 sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-2" href="#"
+        >Sigma<span class="limegreen">Club</span></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
+          <li class="nav-item mx-lg-2">
+            <a class="nav-link text-white" href="index.html">Start</a>
+          </li>
+          <li class="nav-item mx-lg-2">
+            <a class="nav-link text-white" href="#"> Reservierung </a>
+          </li>
+          <li class="nav-item mx-lg-2">
+            <a class="nav-link text-white" href="impressum.html">Über uns</a>
+          </li>
+          <li class="d-flex align-items-center mx-lg-2 mt-2 mt-lg-0">
+            <a
+              href="http://www.facebook.de"
+              target="_blank"
+              class="icon-link text-white"
+              ><i class="fab fa-facebook fa-lg me-2 mx-lg-2"></i
+            ></a>
+            <a
+              href="http://www.twitter.de"
+              target="_blank"
+              class="icon-link text-white"
+              ><i class="fab fa-twitter fa-lg mx-2"></i
+            ></a>
+            <a
+              href="http://www.instagram.de"
+              target="_blank"
+              class="icon-link text-white"
+              ><i class="fab fa-instagram fa-lg mx-2"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <form>
+      <div class="form-group">
+        <div class="row" id="Name">
+          <div class="col">
+            <label for="Vorname" class="form-label">Vorname</label>
+            <input type="text" class="form-control" id="Vorname">
+          </div>
+          <div class="col">
+            <label for="Nachname" class="form-label">Vorname</label>
+            <input type="text" class="form-control" id="Nachname">
+          </div>
+        </div>
+      </div>
+      <div class="form-group mt-4">
+        <label for="E-Mail"  class="form-label">E-Mail</label>
+        <input type="email" class="form-control" id="E-Mail">
+      </div>
+      <div class="form-group mt-4">
+        <label for="Telefonnummer"  class="form-label">Telefonnummer</label>
+        <input type="text" class="form-control" id="Telefonnummer">
+      </div>
+      <div class="form-group mt-4">
+        <div class="row">
+          <div class="col">
+            <label for="personen" class="form-label">Anzahl Personen</label>
+            <select class="form-select" id="personen" required>
+              <option selected>Auswählen</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="bahn" class="form-label">Bahn</label>
+            <select class="form-select" id="bahn" required>
+              <option selected>Auswählen</option>
+              <option value="1">Bahn 1</option>
+              <option value="2">Bahn 2</option>
+              <option value="3">Bahn 3</option>
+              <option value="4">Bahn 4</option>
+              <option value="5">Bahn 5</option>
+              <option value="6">Bahn 6</option>
+              <option value="7">Bahn 7</option>
+              <option value="8">Bahn 8</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-group mt-4">
+        <div class="row">
+          <div class="col">
+            <label for="start" class="form-label">Startzeitpunkt</label>
+            <select class="form-select" id="start" required>
+              <option selected>Auswählen</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="ende" class="form-label">Endzeitpunkt</label>
+            <select class="form-select" id="ende" required>
+              <option selected>Auswählen</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="form-check mt-5">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Ich stimme den <a href="https://binarypiano.com/">Datenschutzrichtlinien</a> zu.</label>
+      </div>
+      <div class="form-check mt-5">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Ich möchte Nachrichten über den Newsletter erhalten (optional).</label>
+      </div>
+      <div class="form-group mt-5">
+      <button type="submit" class="btn btn-primary">Bestätigen</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+</body>
+
+<div class="footer py-5 bg-dark mt-5">&copy 2023 SigmaCorp</div>
+
+</html>
+
