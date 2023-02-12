@@ -13,6 +13,7 @@
 </head>
 <body>
 
+  <!--Navigationsleiste-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-lg-3 sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold fs-2" href="#"
@@ -65,29 +66,47 @@
     </div>
   </nav>
 
+  <!--Carousel Darstellung-->
   <div
   id="carouselExampleFade"
   class="carousel slide carousel-fade"
   data-bs-ride="carousel"
 >
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="8000">
       <div
         class="slider-image"
         style="background-image: url('Bilder/Bowlingbahn.jpg')"
       ></div>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Bowlinganlagen</h5>
+        <p>Spielen sie auf unseren tuniererpropten Bowlingbahnen!</p>
+      </div>
     </div>
     <div class="carousel-item" data-bs-interval="8000">
       <div
         class="slider-image"
         style="background-image: url('Bilder/Billiard.jpg')"
       ></div>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Billiard</h5>
+        <p>Nutzen Sie unsere professionellen Billiardtische!</p>
+      </div>
     </div>
     <div class="carousel-item" data-bs-interval="8000">
       <div
         class="slider-image"
         style="background-image: url('Bilder/Dart.jpg')"
       ></div>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Dart</h5>
+        <p>Oder haben Sie Spaß mit unseren hochwertigen Dartscheiben!</p>
+      </div>
     </div>
   </div>
   <button
@@ -136,6 +155,7 @@
 
 </body>
 
+<!--Fußleiste-->
 <div class="footer py-5 bg-dark mt-5">&copy 2023 SigmaCorp</div>
 
 </html>
