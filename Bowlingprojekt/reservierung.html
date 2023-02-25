@@ -72,34 +72,35 @@
     </p>
   </div>
 
+  <!--ANCHOR Registierungsgruppe -->
   <div class="container mt-5">
     <form>
       <div class="form-group">
         <div class="row" id="Name">
           <div class="col">
             <label for="Vorname" class="form-label">Vorname</label>
-            <input type="text" class="form-control" id="Vorname">
+            <input type="text" class="form-control" id="Vorname" required>
           </div>
           <div class="col">
             <label for="Nachname" class="form-label">Nachname</label>
-            <input type="text" class="form-control" id="Nachname">
+            <input type="text" class="form-control" id="Nachname" required>
           </div>
         </div>
       </div>
       <div class="form-group mt-4">
         <label for="E-Mail"  class="form-label">E-Mail</label>
-        <input type="email" class="form-control" id="E-Mail">
+        <input type="email" class="form-control" id="E-Mail"  required>
       </div>
       <div class="form-group mt-4">
         <label for="Telefonnummer"  class="form-label">Telefonnummer</label>
-        <input type="text" class="form-control" id="Telefonnummer">
+        <input type="text" class="form-control" id="Telefonnummer" required>
       </div>
       <div class="form-group mt-4">
         <div class="row">
           <div class="col">
             <label for="personen" class="form-label">Anzahl Personen</label>
             <select class="form-select" id="personen" required>
-              <option selected>Auswählen</option>
+              <option selected disabled value="">Auswählen</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -113,7 +114,7 @@
           <div class="col">
             <label for="bahn" class="form-label">Bahn</label>
             <select class="form-select" id="bahn" required>
-              <option selected>Auswählen</option>
+              <option selected disabled value="">Auswählen</option>
               <option value="1">Bahn 1</option>
               <option value="2">Bahn 2</option>
               <option value="3">Bahn 3</option>
@@ -129,27 +130,47 @@
       <div class="form-group mt-4">
         <div class="row">
           <div class="col">
-            <label for="start" class="form-label">Startzeitpunkt</label>
+            <label for="date" class="form-label">Datum</label>
+            <input id="date" class="form-control" type="date" />
+          </div>
+          <div class="col">
+            <label for="start" class="form-label">Startzeit</label>
             <select class="form-select" id="start" required>
-              <option selected>Auswählen</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option selected disabled value="">Auswählen</option>
+              <option value="1">16:00</option>
+              <option value="1">17:00</option>
+              <option value="1">18:00</option>
+              <option value="1">19:00</option>
+              <option value="2">20:00</option>
+              <option value="3">21:00</option>
+              <option value="4">22:00</option>
+              <option value="5">23:00</option>
+              <option value="6">0:00</option>
+              <option value="7">1:00</option>
+              <option value="8">2:00</option>
             </select>
           </div>
           <div class="col">
-            <label for="ende" class="form-label">Endzeitpunkt</label>
+            <label for="ende" class="form-label">Endzeit</label>
             <select class="form-select" id="ende" required>
-              <option selected>Auswählen</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option selected disabled value="">Auswählen</option>
+              <option value="1">16:00</option>
+              <option value="1">17:00</option>
+              <option value="1">18:00</option>
+              <option value="1">19:00</option>
+              <option value="2">20:00</option>
+              <option value="3">21:00</option>
+              <option value="4">22:00</option>
+              <option value="5">23:00</option>
+              <option value="6">0:00</option>
+              <option value="7">1:00</option>
+              <option value="8">2:00</option>
             </select>
           </div>
         </div>
       </div>
       <div class="form-check mt-5">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
         <label class="form-check-label" for="exampleCheck1">Ich stimme den <a href="#">Datenschutzrichtlinien</a> zu.</label>
       </div>
       <div class="form-check mt-5">
@@ -169,4 +190,5 @@
 <div class="footer py-5 bg-dark mt-5">&copy 2023 SigmaCorp</div>
 
 </html>
+
 
