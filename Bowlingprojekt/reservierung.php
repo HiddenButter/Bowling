@@ -172,9 +172,9 @@ if(isset($_POST['submit']))
       echo "The form has been submitted";
     }
  if ($errSurname=='' && $errName=='' && $errInputemail=='' && $emailErr=='' && $errPhone=='' && $errPlayers=='' && $errLane_id=='' && $errDate=='' && $errStart=='' && $errEnd=='' && $errDscheck=='') {
-		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+		$result='<div class="alert alert-success">Vielen Dank für Ihre Reservierung.</div>';
 	} else {
-		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
+		$result='<div class="alert alert-danger">Da ist leider etwas schiefgelaufen. Bitte versuchen Sie es später noch einmal.</div>';
 	}
 } 
   ?>
